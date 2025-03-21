@@ -225,6 +225,7 @@ ul li a{
     color: #fff;
     background-color: #ba0505;
     font-size: clamp(24px, 2vw, 150px);
+    text-align: center;
 }
 @media(max-width:1290px){
     .naslov_vodni_curek{
@@ -251,22 +252,26 @@ ul li a{
         height: 26vw;
     }
 }
-@media(max-width:550px){
+@media(max-width:566px){
     .naslov_vodni_curek{
-        height: 30vw;
+        height: 45vw;
     }
 }
-@media(max-width:463px){
+@media(max-width:490px){
     .naslov_vodni_curek{
-        height: 36vw;
+        height: 50vw;
     }
 }
-@media(max-width:379px){
+@media(max-width:430px){
     .naslov_vodni_curek{
-        height: 40vw;
+        height: 55vw;
     }
 }
-
+@media(max-width:390px){
+    .naslov_vodni_curek{
+        height: 60vw;
+    }
+}
 
 
 .konstrukcije{
