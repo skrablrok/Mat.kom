@@ -255,14 +255,15 @@ ul li a{
         height: 30vw;
     }
 }
-@media(max-width:463px){
+@media(max-width:434px){
     .naslov_konstrukcije{
-        height: 36vw;
+        height: 50vw;
+        text-align: center;
     }
 }
-@media(max-width:379px){
+@media(max-width:408px){
     .naslov_konstrukcije{
-        height: 40vw;
+        height: 60vw;
     }
 }
 
