@@ -197,7 +197,6 @@ ul li a{
         padding: 50px 20px;
         transition: all .55s ease;
         overflow: scroll;
-        z-index: 1;
     }
     .navlist a{
         padding-top: 2vw;
