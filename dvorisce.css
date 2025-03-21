@@ -223,7 +223,8 @@ ul li a{
     justify-content: center;
     color: #fff;
     background-color: #ba0505;
-    font-size: clamp(24px, 2vw, 150px);
+    font-size: clamp(20px, 2vw, 150px);
+    text-align: center;
 }
 @media(max-width:1290px){
     .naslov_vodni_curek{
@@ -240,29 +241,34 @@ ul li a{
         height: 20vw;
     }
 }
-@media(max-width:741px){
+@media(max-width:755px){
     .naslov_vodni_curek{
-        height: 23vw;
+        height: 25vw;
     }
 }
-@media(max-width:639px){
+@media(max-width:703px){
     .naslov_vodni_curek{
-        height: 26vw;
+        height: 27vw;
     }
 }
-@media(max-width:550px){
+@media(max-width:623px){
     .naslov_vodni_curek{
-        height: 30vw;
+        height: 35vw;
     }
 }
-@media(max-width:463px){
-    .naslov_vodni_curek{
-        height: 36vw;
-    }
-}
-@media(max-width:379px){
+@media(max-width:529px){
     .naslov_vodni_curek{
         height: 40vw;
+    }
+}
+@media(max-width:471px){
+    .naslov_vodni_curek{
+        height: 45vw;
+    }
+}
+@media(max-width:413px){
+    .naslov_vodni_curek{
+        height: 53vw;
     }
 }
 
