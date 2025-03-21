@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins';
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("slike/ozadje_glava.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 45vh;
+
+}
+ul li a{
+    position: relative; 
+}
+.nav_bar{
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+
+}
+.nav_bar a{
+    max-width: max-content;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-bottom: solid hidden;
+}
+.nav_link:hover{
+    color: white;
+    transition: 0.3s;
+    
+}
+.nav_bar li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .3s;
+
+}
+.nav_bar a:hover::after{
+    transform-origin: center;
+    transform: scaleX(1);
+
+}
+
+
+
+.logo{
+    width: 30%;
+    display: flex;
+
+}
+.logo img{
+    width: clamp(100px, 5vw, 120px);
+
+}
+.nav_bar{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+
+}
+
+.navlist li{
+    display: inline;
+    padding: 30px;
+
+
+}
+#menu-icon{
+    color: white;
+    font-size: 55px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+
+
+@media (max-width:1035px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -150%;
+        right: 0;
+        width: 250px;
+        height: 70vh;
+        background: #000;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+        overflow: hidden;
+    }
+    .navlist a{
+        padding-top: 2vw;
+        display: flex;
+        margin: 8px 0;
+        margin-left: 0;
+    }
+    .navlist.open{
+        top: 0;
+    }
+}
+
+
+
+
+
+.naslov_reference{
+    max-width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #fff;
+    font-size: clamp(20px, 2vw, 150px);
+}
+
+
+
+
+
+
+
+main{
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+.container{
+    max-width: 1200px;
+    width: 95%;
+}
+.slider_wrapper{
+    position: relative;
+}
+.slider_wrapper .slide-button{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background: none;
+    outline: none;
+    background: #000;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.slider_wrapper .slide-button:hover{
+    background: #444;
+}
+.slider_wrapper .slide-button#prev-slide{
+    left: -20px;
+    display: none;
+}
+.slider_wrapper .slide-button#next-slide{
+    right: -20px;
+}
+.slider_wrapper .image_list{
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+}
+.slider_wrapper .image_list::-webkit-scrollbar{
+    display: none;
+}
+.slider_wrapper .image_list .image_item{
+    width: 30vw;
+    height: 400px;
+    object-fit: cover;
+}
+img{
+    width:30vw;
+}
+
+.container .slider_scrollbar{
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.slider_scrollbar .scrollbar_track{
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    position: relative;
+    border-radius: 4px;
+
+}
+.slider_scrollbar:hover .scrollbar_track{
+    height: 4px;
+}
+.slider_scrollbar .scrollbar_thumb{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #000;
+    border-radius: inherit;
+    cursor: grab;
+}
+.slider_scrollbar .scrollbar_track:active{
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+.slider_scrollbar .scrollbar_thumb::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+
+
+@media (max-width: 1023px){
+    .slider_wrapper .slide-button{
+        display: none !important;
+    }
+    .slider_wrapper .image_list{
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .slider_wrapper .image_list .image_item{
+        width: 280px;
+        height: 380px;
+    }
+    .slider_scrollbar .scrollbar_thumb{
+        width: 20%;
+    }
+}
+
+
+
+
+
+
+
+@media(max-width:575px){
+    main{
+        margin-top: -20vw;
+        margin-bottom: -20vw
+    }
+}
+
+@media(max-width:400px){
+    main{
+        margin-top: -35vw;
+        margin-bottom: -35vw
+    }
+}
+@media(max-width:490px){
+    img{
+        width: 80vw;
+    }
+    .container{
+        padding-top: 25vw;
+        padding-bottom: 25vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background: #13591db1;
+    color: #fff;
+}
+.naslov_noga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cela_noga{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.kontakt{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-variant: small-caps;
+
+}
+.lokacija{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-variant: small-caps;
+}
+.info h2{
+    font-weight: bold;
+    font-size: clamp(20px, 2vw, 120px);
+}
+.info h4{
+    font-weight: lighter;
+    font-size: clamp(14px, 1.2vw, 120px);
+}
+.info a{
+    color: #fff;
+}
+
+.nav-links2{
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+.nav-links2 a{
+    text-decoration: underline;
+    color: #F4A950;
+    font-size: clamp(10px, 1vw, 60px);
+}
+
+@media(max-width:620px){
+    .info{
+        flex-direction: column;
+    }
+    .kontakt{
+        padding-bottom: 10vw;
+    }
+}
+
+
+.custom-shape-divider-top-1729687953 {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.custom-shape-divider-top-1729687953 svg {
+
+    width: calc(178% + 1.3px);
+    height: 140px;
+
+}
+
+.custom-shape-divider-top-1729687953 .shape-fill {
+    fill: #FFFFFF;
+}
