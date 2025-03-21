@@ -217,56 +217,56 @@ ul li a{
 
 .naslov_ladje{
     font-variant: small-caps;
-    height: 12vw;
+    height: 20vw;
     display: flex;
     align-items: flex-end;
     padding-bottom: 2vw;
     justify-content: center;
     color: #fff;
     background-color: #ba0505;
-    font-size: clamp(24px, 2vw, 150px);
+    font-size: clamp(20px, 2vw, 150px);
+    text-align: center;
 }
 @media(max-width:1290px){
     .naslov_ladje{
-        height: 15vw;
-    }
-}
-@media(max-width:1039px){
-    .naslov_ladje{
-        height: 17vw;
-    }
-}
-@media(max-width:909px){
-    .naslov_ladje{
-        height: 20vw;
+        height: 25vw;
     }
 }
 @media(max-width:741px){
     .naslov_ladje{
-        height: 23vw;
+        height: 30vw;
     }
 }
 @media(max-width:639px){
     .naslov_ladje{
-        height: 26vw;
+        height: 35vw;
     }
 }
-@media(max-width:550px){
-    .naslov_ladje{
-        height: 30vw;
-    }
-}
-@media(max-width:463px){
-    .naslov_ladje{
-        height: 36vw;
-    }
-}
-@media(max-width:379px){
+@media(max-width:580px){
     .naslov_ladje{
         height: 40vw;
     }
 }
-
+@media(max-width:556px){
+    .naslov_ladje{
+        height: 50vw;
+    }
+}
+@media(max-width:493px){
+    .naslov_ladje{
+        height: 60vw;
+    }
+}
+@media(max-width:411px){
+    .naslov_ladje{
+        height: 80vw;
+    }
+}
+@media(max-width:375px){
+    .naslov_ladje{
+        height: 90vw;
+    }
+}
 
 
 .konstrukcije{
