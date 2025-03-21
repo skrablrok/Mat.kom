@@ -256,14 +256,15 @@ ul li a{
         height: 30vw;
     }
 }
-@media(max-width:463px){
+@media(max-width:502px){
     .naslov_vodni_curek{
-        height: 36vw;
+        height: 50vw;
+        text-align: center;
     }
 }
-@media(max-width:379px){
+@media(max-width:408px){
     .naslov_vodni_curek{
-        height: 40vw;
+        height: 60vw;
     }
 }
 
