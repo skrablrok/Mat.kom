@@ -196,7 +196,7 @@ ul li a{
         flex-direction: column;
         padding: 50px 20px;
         transition: all .55s ease;
-        overflow: hidden;
+        overflow: scroll;
         z-index: 1;
     }
     .navlist a{
